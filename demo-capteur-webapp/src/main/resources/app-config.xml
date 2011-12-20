@@ -51,7 +51,8 @@
   </property>
   <property name="annotatedClasses">
     <list>
-      <value>demo.capteur.model</value>
+      <value>demo.capteur.model.Capteur</value>
+      <value>demo.capteur.model.Mesure</value>
     </list>
   </property>
 </bean>

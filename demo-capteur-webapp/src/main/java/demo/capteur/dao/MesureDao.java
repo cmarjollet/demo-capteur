@@ -5,7 +5,7 @@ import org.springframework.stereotype.Repository;
 import demo.capteur.model.Mesure;
 
 @Repository
-public class MesureDao extends AbstractDao<Mesure> {
+public class MesureDao extends AbstractHibernateDao<Mesure> {
 
 	public MesureDao() {
 		super(Mesure.class);

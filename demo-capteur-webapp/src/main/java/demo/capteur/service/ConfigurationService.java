@@ -20,14 +20,14 @@ public class ConfigurationService {
 	public Capteur createCapteur(Capteur capteur) {
 		Args.notNull(capteur, "capteur");
 		Args.notEmpty(capteur.getNom(), "capteur.nom");
-		return capteurDao.saveOrUpdate(capteur);
+		return capteurDao.create(capteur);
 	}
 
 	public Capteur updateCapteur(Capteur capteur) {
 		Args.notNull(capteur, "capteur");
 		Args.notNull(capteur.getId(), "capteur.id");
 		Args.notEmpty(capteur.getNom(), "capteur.nom");
-		return capteurDao.saveOrUpdate(capteur);
+		return capteurDao.update(capteur);
 	}
 
 	public void deleteCapteur(Capteur capteur) {
